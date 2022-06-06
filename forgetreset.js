@@ -4,7 +4,7 @@ const mongoose = require('mongoose')
 const bodyparser = require('body-parser')
 const bcrypt = require('bcrypt')
 const User = require('./userSchema')
-mongoose.connect("mongodb+srv://atul:h6iRSWoWXaOUTPgi@cluster0.yavrk.mongodb.net/practiceOne?retryWrites=true&w=majority", () => {
+mongoose.connect("mongodb+srv://@cluster0.yavrk.mongodb.net/practiceOne?retryWrites=true&w=majority", () => {
     console.log("mongodb connected");
 },
     e => console.error(e)
